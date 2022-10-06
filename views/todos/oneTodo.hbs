@@ -1,0 +1,8 @@
+<p>Task name: <b>{{todos.taskName}}</b></p>
+<p>Created at: <i>{{todos.createdAt}}</i></p>
+
+<button class="btn btn-primary todo-edit" type="submit">Edit</button>
+
+{{> todoInput id=todos._id class="hidden" value=todos.taskName }}
+
+{{> backHome}}

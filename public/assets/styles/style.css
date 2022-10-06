@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  overflow-x: hidden; }
+
+body {
+  background-color: #d0c9de; }
+
+.hidden {
+  display: none; }
+
+div {
+  border-radius: 1rem; }
+  div:first-child {
+    width: 50%;
+    background: transparent; }
+  div .box {
+    box-shadow: 0 0 20px #6d6d6d; }
+
+header {
+  font-size: 7rem; }
+
+@media (max-width: 1160px), (max-width: 1160px) and (orientation: landscape) {
+  html {
+    font-size: 80%; }
+
+  div:first-child {
+    width: 100%; }
+
+  header {
+    font-size: 5rem; } }
+.one-todo {
+  background-color: #e2dae6;
+  padding: 1rem; }
+
+/*# sourceMappingURL=style.css.map */

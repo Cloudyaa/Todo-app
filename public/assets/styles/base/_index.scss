@@ -1,0 +1,50 @@
+@import '../helpers/colors';
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: $main-bg;
+}
+
+.hidden {
+  display: none;
+}
+
+div {
+  border-radius: 1rem;
+  &:first-child {
+    width: 50%;
+    background: transparent;
+  }
+
+  .box{
+    box-shadow: 0 0 20px $shadow;
+  }
+}
+
+  header {
+    font-size: 7rem;
+  }
+
+  @media (max-width: 1160px), (max-width: 1160px) and (orientation: landscape) {
+    html {
+      font-size: 80%;
+    }
+    div:first-child{
+      width: 100%;
+    }
+
+    header{
+      font-size: 5rem;
+    }
+  }
+

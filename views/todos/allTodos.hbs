@@ -1,0 +1,15 @@
+<p>{{count}} ongoing todos</p>
+
+{{> todoInput}}
+
+
+{{#each todos}}
+    <div class="one-todo m-auto d-flex justify-content-between">
+        <h5>{{this.taskName}}</h5>
+        <div class="d-flex" role="group" aria-label="Basic example">
+            <button class="btn btn-info" type="submit" onclick="window.location.href='/todos/{{this._id}}'">Details</button>
+            <form method="POST" action="/todos/{{this._id}}?_method=DELETE"><button class="btn btn-danger" type="submit">Delete</button></form>
+        </div>
+    </div>
+    <br>
+{{/each}}
